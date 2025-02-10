@@ -1,0 +1,113 @@
+:root {
+  --black: #121212;
+  --white: #fffffc;
+  --accent: #11122d;
+  --secondary: #8892b0;
+  --third: #00c9db;
+  --Roboto: "Roboto", sans-serif;
+  --Poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--Roboto);
+  background: var(--white);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* CETTE PARTIE CONCERNE LA GESTION DU BACKGROUND */
+
+.container {
+  min-height: 400vh;
+  background-color: transparent;
+  backdrop-filter: blur(250px);
+  padding: 0 40px;
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  justify-content: center;
+  display: flex;
+  z-index: -1;
+}
+
+.bg--shape {
+  width: 200vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 75%;
+  animation: bg-anim 16s infinite;
+  flex: none;
+  background: #fc5c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #6a82fb,
+    #fc5c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #6a82fb,
+    #fc5c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes bg-anim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* CETTE PARTIE CONCERNE LA HERO SECTION */
+
+.hero--section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--right {
+  display: flex;
+  flex-direction: column;
+  padding-right: 200px;
+  gap: 20px;
+}
+
+.hero--title {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-family: var(--Poppins);
+  color: var(--black);
+}
+
+.cta {
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 15px;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--black);
+  color: var(--white);
+}
