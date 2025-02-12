@@ -25,7 +25,12 @@
           <p>Hello World! Je suis</p>
           <h2 class="hero--title word">Jordan Pieton</h2>
           <h1 class="hero--subtitle">Développeur web autodidacte</h1>
-          <button class="cta">Contactez moi!</button>
+          <a href="#projects" class="link"
+            ><button class="cta">Découvrir mes projets</button></a
+          >
+          <a href="#contact" class="link"
+            ><button class="cta-reverse">Me contacter</button></a
+          >
         </div>
         <div class="hero--right">
           <p>
@@ -61,6 +66,67 @@
             <span class="bold">N'hésitez pas à me contacter !</span>
           </p>
         </div>
+      </section>
+      <section id="projects">
+        <article class="project-card">
+          <h2>Blink182-fr</h2>
+          <p>"Blink-182-fr" est un site réalisé sur un groupe de musique.
+            Il s'agit du premier projet que j'ai développé dans le cadre de mon apprentissage du HTML et du CSS.            
+            J'ai utilisé Tailwind pour me faciliter la mise en page et le responsive.            
+            Il comporte un peu de JavaScript pour l'interactivité du menu "hamburger" sur les petits écrans.</p>
+          <iframe src="https://blink-182-fr.web.app/" class="project-preview"></iframe>
+          <a href="https://blink-182-fr.web.app/" ><button class="cta">Voir le projet</button></a>
+        </article>
+        <article class="project-card">
+          <h2>Lens Quiz</h2>
+          <p>Dans le cadre de l'apprentissage du JavaScript, j'ai souhaité réaliser un jeu sous forme de quiz afin de pouvoir travailler sur de nombreux aspects du langage.
+
+            Ce quiz est basé sur l'histoire d'un club de football.
+            
+            Le quiz propose 10 questions dans un ordre aléatoire avec 4 propositions de réponses chacune, puis un tableau qui récapitule les scores.</p>
+          <iframe src="https://rclensquiz.web.app/" class="project-preview"></iframe>
+          <a href="https://rclensquiz.web.app/" ><button class="cta">Voir le projet</button></a>
+        </article>
+        <article class="project-card">
+          <h2>Direct Meteo</h2>
+          <p>Lorsque j'ai découvert le concept d'API, j'ai souhaité développer une application web météo afin de pratiquer les appels API et l'intégration des résultats obtenus dans le HTML.
+
+            L'application demande l'accord à l'utilisateur pour accéder à sa géolocalisation, mais l'utilisateur peut également rechercher la ville de son choix pour en obtenir la météo en temps réel.</p>
+          <iframe src="https://direct-meteo.web.app/" class="project-preview"></iframe>
+          <a href="https://direct-meteo.web.app/" ><button class="cta">Voir le projet</button></a>
+        </article>
+        <article class="project-card">
+          <h2>Mars Pictures</h2>
+          <p>Pour poursuivre la découverte des API, j'ai souhaité m'entraîner sur celle de la NASA.
+
+            J'ai donc conçu un site qui permet à l'utilisateur d'accéder aux photographies réalisées sur Mars par le robot Curiosity.
+            
+            La recherche de photos s'effectue par date, il suffit de sélectionner une date pour que le site affiche l'ensemble des photos transmises par le robot à la date choisie.</p>
+          <iframe src="https://mars-pictures.web.app/" class="project-preview"></iframe>
+          <a href="https://mars-pictures.web.app/" ><button class="cta">Voir le projet</button></a>
+        </article>
+      </section>
+      <section id="contact">
+        <div></div>
+        <div class="contact--form">
+          <!-- Formulaire de contact -->
+            <form id="contactForm" method="post">
+              <label for="Name">Votre nom</label>
+              <input type="text" name="name" id="Name" autocomplete="name" required>
+
+              <label for="Email">Votre e-mail</label>
+              <input type="email" name="email" id="Email" autocomplete="email" required>
+
+              <label for="Subject">Objet</label>
+              <input type="text" name="subject" id="Subject" required>
+
+              <label for="Message">Votre message</label>
+              <textarea name="message" id="Message" required></textarea>
+
+              <button class="form--btn" type="submit">Envoyer</button>
+                        <!-- Div pour afficher le message -->
+              <div id="formMessage"></div>
+          </form>
       </section>
     </main>
     <footer></footer>
