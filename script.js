@@ -1,9 +1,11 @@
+/* Function used to split letters of a word in order to style them one by one */
+
 const splitting = () => {
-  document.querySelectorAll(".word").forEach((word) => {
-    const letters = word.innerText.split("");
-    word.innerHTML = null;
+  document.querySelectorAll(".split").forEach((split) => {
+    const letters = split.innerText.split("");
+    split.innerHTML = null;
     letters.forEach((letter) => {
-      word.innerHTML += `<span class="letter">${letter}</span>`;
+      split.innerHTML += `<span class="letter">${letter}</span>`;
     });
   });
 };
@@ -12,6 +14,8 @@ splitting();
 document.querySelectorAll(".letter").forEach((span, index) => {
   span.style.setProperty("--i", index);
 });
+
+/* Code used to add a smooth scroll to the nav links */
 
 document.querySelectorAll(".link").forEach((link) => {
   link.addEventListener("click", (e) => {

@@ -10,29 +10,41 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <div class="background">
-      <div class="bg--shape"></div>
-    </div>
-    <main class="container">
-      <section class="hero--section">
-        <div class="hero--left">
+    <section class="background">
+      <div class="bgShape"></div>
+    </section>
+    <section class="container">
+      <header class="globalHeader section">
+        <section class="headerMain">
           <p>Hello World! Je suis</p>
-          <h2 class="hero--title word">Jordan Pieton</h2>
-          <h1 class="hero--subtitle">Développeur web autodidacte</h1>
-          <a href="#projects" class="link"
-            ><button class="cta">Découvrir mes projets</button></a
-          >
-          <a href="#contact" class="link"
-            ><button class="cta-reverse">Me contacter</button></a
-          >
-        </div>
-        <div class="hero--right">
+          <h2 class="headerTitle split">Jordan Pieton</h2>
+          <h1 class="headerSubtitle">Développeur web autodidacte</h1>
+          <nav>
+            <ul class="globalNav">
+              <li>
+                <a href="#projectSection" class="link btnReverse"
+                  >Découvrir mes projets</a
+                >
+              </li>
+              <li>
+                <a href="#contactSection" class="link btn">Me contacter</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section class="headerSecond">
           <p>
             Passionné de technologie et âgé de 33 ans,
             <span class="bold"
@@ -65,78 +77,175 @@
             collaboration.
             <span class="bold">N'hésitez pas à me contacter !</span>
           </p>
-        </div>
-      </section>
-      <section id="projects">
-        <h2 class="subtitle">Mes projets</h2>
-        <div class="project-container">
-        <article class="project-card">
-          <h2>Blink182-fr</h2>
-          <p>"Blink-182-fr" est un site réalisé sur un groupe de musique.
-            Il s'agit du premier projet que j'ai développé dans le cadre de mon apprentissage du HTML et du CSS.            
-            J'ai utilisé Tailwind pour me faciliter la mise en page et le responsive.            
-            Il comporte un peu de JavaScript pour l'interactivité du menu "hamburger" sur les petits écrans.</p>
-          <iframe src="https://blink-182-fr.web.app/" class="project-preview"></iframe>
-          <a href="https://blink-182-fr.web.app/" ><button class="cta">Voir le projet</button></a>
-        </article>
-        <article class="project-card">
-          <h2>Lens Quiz</h2>
-          <p>Dans le cadre de l'apprentissage du JavaScript, j'ai souhaité réaliser un jeu sous forme de quiz afin de pouvoir travailler sur de nombreux aspects du langage.
-
-            Ce quiz est basé sur l'histoire d'un club de football.
-            
-            Le quiz propose 10 questions dans un ordre aléatoire avec 4 propositions de réponses chacune, puis un tableau qui récapitule les scores.</p>
-          <iframe src="https://rclensquiz.web.app/" class="project-preview"></iframe>
-          <a href="https://rclensquiz.web.app/" ><button class="cta">Voir le projet</button></a>
-        </article>
-        <article class="project-card">
-          <h2>Direct Meteo</h2>
-          <p>Lorsque j'ai découvert le concept d'API, j'ai souhaité développer une application web météo afin de pratiquer les appels API et l'intégration des résultats obtenus dans le HTML.
-
-            L'application demande l'accord à l'utilisateur pour accéder à sa géolocalisation, mais l'utilisateur peut également rechercher la ville de son choix pour en obtenir la météo en temps réel.</p>
-          <iframe src="https://direct-meteo.web.app/" class="project-preview"></iframe>
-          <a href="https://direct-meteo.web.app/" ><button class="cta">Voir le projet</button></a>
-        </article>
-        <article class="project-card">
-          <h2>Mars Pictures</h2>
-          <p>Pour poursuivre la découverte des API, j'ai souhaité m'entraîner sur celle de la NASA.
-
-            J'ai donc conçu un site qui permet à l'utilisateur d'accéder aux photographies réalisées sur Mars par le robot Curiosity.
-            
-            La recherche de photos s'effectue par date, il suffit de sélectionner une date pour que le site affiche l'ensemble des photos transmises par le robot à la date choisie.</p>
-          <iframe src="https://mars-pictures.web.app/" class="project-preview"></iframe>
-          <a href="https://mars-pictures.web.app/" ><button class="cta">Voir le projet</button></a>
-        </article></div>
-      </section>
-      <section id="contact">
-        <h2 class="subtitle">Me contacter</h2>
-        <div class="contact-container">
-          <div>
-            <p>N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mon parcours </p>
-          </div>
-        <div class="contact--form">
-          <!-- Formulaire de contact -->
-            <form id="contactForm" method="post">
-              <label for="Name">Votre nom</label>
-              <input type="text" name="name" id="Name" autocomplete="name" required>
-
-              <label for="Email">Votre e-mail</label>
-              <input type="email" name="email" id="Email" autocomplete="email" required>
-
-              <label for="Subject">Objet</label>
-              <input type="text" name="subject" id="Subject" required>
-
-              <label for="Message">Votre message</label>
-              <textarea name="message" id="Message" required></textarea>
-
-              <button class="form--btn" type="submit">Envoyer</button>
-                        <!-- Div pour afficher le message -->
-              <div id="formMessage"></div>
-          </form>
-        </div>
-        
-      </section>
-    </main>
-    <footer></footer>
+        </section>
+      </header>
+      <main>
+        <section class="projectSection section" id="projectSection">
+          <h2 class="subtitle">Mes projets</h2>
+          <ul class="projectContainer">
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Blink-182-fr</h3>
+                <img
+                  src="src/blink.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  "Blink-182-fr" est un site réalisé sur un groupe de musique.
+                  Il s'agit du premier projet que j'ai développé dans le cadre
+                  de mon apprentissage du HTML et du CSS. J'ai utilisé Tailwind
+                  pour me faciliter la mise en page et le responsive. Il
+                  comporte un peu de JavaScript pour l'interactivité du menu
+                  "hamburger" sur les petits écrans.
+                </p>
+                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+              </article>
+            </li>
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Lens Quiz</h3>
+                <img
+                  src="src/lens.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  Dans le cadre de l'apprentissage du JavaScript, j'ai souhaité
+                  réaliser un jeu sous forme de quiz afin de pouvoir travailler
+                  sur de nombreux aspects du langage. Ce quiz est basé sur
+                  l'histoire d'un club de football. Le quiz propose 10 questions
+                  dans un ordre aléatoire avec 4 propositions de réponses
+                  chacune, puis un tableau qui récapitule les scores.
+                </p>
+                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+              </article>
+            </li>
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Direct Meteo</h3>
+                <img
+                  src="src/meteo.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  Lorsque j'ai découvert le concept d'API, j'ai souhaité
+                  développer une application web météo afin de pratiquer les
+                  appels API et l'intégration des résultats obtenus dans le
+                  HTML. L'application demande l'accord à l'utilisateur pour
+                  accéder à sa géolocalisation, mais l'utilisateur peut
+                  également rechercher la ville de son choix pour en obtenir la
+                  météo en temps réel.
+                </p>
+                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+              </article>
+            </li>
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Mars Pictures</h3>
+                <img
+                  src="src/mars.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  Pour poursuivre la découverte des API, j'ai souhaité
+                  m'entraîner sur celle de la NASA. J'ai donc conçu un site qui
+                  permet à l'utilisateur d'accéder aux photographies réalisées
+                  sur Mars par le robot Curiosity. La recherche de photos
+                  s'effectue par date, il suffit de sélectionner une date pour
+                  que le site affiche l'ensemble des photos transmises par le
+                  robot à la date choisie.
+                </p>
+                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+              </article>
+            </li>
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Harmonie Intérieure</h3>
+                <img
+                  src="src/aphton.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  J'ai eu le plaisir de créer le site vitrine d'une amie qui
+                  lance son activité de sophrologie. Ce site a pour but de la
+                  faire connaitre à de nouveaux client et comporte une page pour
+                  présenter son parcours, puis une page présentant chacune des
+                  prestations qu'elle propose. Le site propose également un
+                  formulaire de contact pour la contacter directement par mail
+                  et des liens vers la page de prise de rendez-vous sur Résalib.
+                </p>
+                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section class="contactSection section" id="contactSection">
+          <h2 class="subtitle">Me contacter</h2>
+          <article class="contactContainer">
+            <div class="contactMain">
+              <p>
+                Que ce soit pour discuter de mes projets, en savoir plus sur mon
+                parcours ou me proposer une opportunité de stage, n’hésitez pas
+                à me contacter ! Vous pouvez me retrouver sur GitHub et
+                LinkedIn, ou m’envoyer un message directement via le formulaire.
+              </p>
+              <ul class="contactLinks">
+                <li>
+                  <a href="#" class="contactBtn"
+                    ><i class="fa-brands fa-github"></i> Retrouvez moi sur
+                    Github</a
+                  >
+                </li>
+                <li>
+                  <a href="https://google.fr" class="contactBtn"
+                    ><i class="fa-brands fa-linkedin"></i> Connectons nous sur
+                    LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form action="post" class="contactForm">
+              <p>
+                <label for="name">Votre nom</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autocomplete="name"
+                  required
+                />
+              </p>
+              <p>
+                <label for="email">Votre e-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  required
+                />
+              </p>
+              <p>
+                <label for="subject">Objet</label>
+                <input type="text" name="subject" id="subject" required />
+              </p>
+              <p>
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" required></textarea>
+              </p>
+              <button class="formBtn" type="submit">Envoyer</button>
+              <div id="formMessage" class="formMessage"></div>
+            </form>
+          </article>
+        </section>
+      </main>
+      <footer class="globalFooter">
+        <p>&#169; Copyright 2025 - Jordan Pieton</p>
+      </footer>
+    </section>
   </body>
 </html>
