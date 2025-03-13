@@ -3,7 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Jordan Pieton, développeur web junior"
+    />
+    <meta name="keywords" content="développeur, web, front-end" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Jordan Pieton | Développeur web junior"
+    />
+    <meta
+      property="og:site_name"
+      content="Jordan Pieton | Développeur web junior"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio de Jordan Pieton, développeur web junior"
+    />
+    <meta property="og:image" content="IMAGE A AJOUTER" />
+    <meta property="og:url" content="https://jordanpieton.fr/" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="twitter:title"
+      content="Jordan Pieton | Développeur web junior"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio de Jordan Pieton, développeur web junior"
+    />
+    <meta name="twitter:image" content="IMAGE A AJOUTER" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +50,17 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc33V4qAAAAAEckPbw_0YOsNBn9vqsBiDnJjvDp"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Jordan Pieton | Développeur web autodidacte",
+        "url": "https://www.jordanpieton.fr",
+        "logo": "https://jordanpieton.fr/img/logo.webp"
+      }
+    </script>
+    <title>Jordan Pieton | Développeur Web</title>
   </head>
   <body>
     <section class="background">
@@ -30,7 +71,7 @@
         <section class="headerMain">
           <p>Hello World! Je suis</p>
           <h2 class="headerTitle split">Jordan Pieton</h2>
-          <h1 class="headerSubtitle">Développeur web autodidacte</h1>
+          <h1 class="headerSubtitle">Développeur web junior</h1>
           <nav>
             <ul class="globalNav">
               <li>
@@ -87,7 +128,7 @@
               <article class="projectCard">
                 <h3 class="projectTitle">Blink-182-fr</h3>
                 <img
-                  src="src/blink.webp"
+                  src="img/blink.webp"
                   alt="illustration projet"
                   class="projectImg"
                 />
@@ -99,14 +140,19 @@
                   comporte un peu de JavaScript pour l'interactivité du menu
                   "hamburger" sur les petits écrans.
                 </p>
-                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+                <a
+                  href="https://blink-182-fr.web.app/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
               </article>
             </li>
             <li>
               <article class="projectCard">
                 <h3 class="projectTitle">Lens Quiz</h3>
                 <img
-                  src="src/lens.webp"
+                  src="img/lens.webp"
                   alt="illustration projet"
                   class="projectImg"
                 />
@@ -118,14 +164,19 @@
                   dans un ordre aléatoire avec 4 propositions de réponses
                   chacune, puis un tableau qui récapitule les scores.
                 </p>
-                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+                <a
+                  href="https://rclensquiz.web.app/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
               </article>
             </li>
             <li>
               <article class="projectCard">
                 <h3 class="projectTitle">Direct Meteo</h3>
                 <img
-                  src="src/meteo.webp"
+                  src="img/meteo.webp"
                   alt="illustration projet"
                   class="projectImg"
                 />
@@ -138,14 +189,19 @@
                   également rechercher la ville de son choix pour en obtenir la
                   météo en temps réel.
                 </p>
-                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+                <a
+                  href="https://direct-meteo.web.app/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
               </article>
             </li>
             <li>
               <article class="projectCard">
                 <h3 class="projectTitle">Mars Pictures</h3>
                 <img
-                  src="src/mars.webp"
+                  src="img/mars.webp"
                   alt="illustration projet"
                   class="projectImg"
                 />
@@ -158,14 +214,19 @@
                   que le site affiche l'ensemble des photos transmises par le
                   robot à la date choisie.
                 </p>
-                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+                <a
+                  href="https://mars-pictures.web.app/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
               </article>
             </li>
             <li>
               <article class="projectCard">
                 <h3 class="projectTitle">Harmonie Intérieure</h3>
                 <img
-                  src="src/aphton.webp"
+                  src="img/aphton.webp"
                   alt="illustration projet"
                   class="projectImg"
                 />
@@ -178,7 +239,12 @@
                   formulaire de contact pour la contacter directement par mail
                   et des liens vers la page de prise de rendez-vous sur Résalib.
                 </p>
-                <a href="#" class="projectLink btnReverse">Voir le projet</a>
+                <a
+                  href="https://aphtonminne.fr/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
               </article>
             </li>
           </ul>
