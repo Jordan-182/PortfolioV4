@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio de Jordan Pieton, développeur web junior"
+      content="Portfolio de Jordan Pieton, développeur web"
     />
     <meta name="keywords" content="développeur, web, front-end" />
     <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Jordan Pieton | Développeur web junior"
-    />
-    <meta
-      property="og:site_name"
-      content="Jordan Pieton | Développeur web junior"
-    />
+    <meta property="og:title" content="Jordan Pieton | Développeur web" />
+    <meta property="og:site_name" content="Jordan Pieton | Développeur web" />
     <meta
       property="og:description"
-      content="Portfolio de Jordan Pieton, développeur web junior"
+      content="Portfolio de Jordan Pieton, développeur web"
     />
-    <meta property="og:image" content="IMAGE A AJOUTER" />
+    <meta
+      property="og:image"
+      content="https://jordanpieton.fr/img/OGImage.png"
+    />
     <meta property="og:url" content="https://jordanpieton.fr/" />
     <meta property="og:type" content="website" />
-    <meta
-      name="twitter:title"
-      content="Jordan Pieton | Développeur web junior"
-    />
+    <meta name="twitter:title" content="Jordan Pieton | Développeur web" />
     <meta
       name="twitter:description"
-      content="Portfolio de Jordan Pieton, développeur web junior"
+      content="Portfolio de Jordan Pieton, développeur web"
     />
-    <meta name="twitter:image" content="IMAGE A AJOUTER" />
+    <meta
+      name="twitter:image"
+      content="https://jordanpieton.fr/img/OGImage.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,15 +46,38 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
     <script type="module" src="script.js" defer></script>
+
     <script src="https://www.google.com/recaptcha/api.js?render=6Lc33V4qAAAAAEckPbw_0YOsNBn9vqsBiDnJjvDp"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Jordan Pieton | Développeur web autodidacte",
+        "name": "Jordan Pieton | Développeur web",
         "url": "https://www.jordanpieton.fr",
-        "logo": "https://jordanpieton.fr/img/logo.webp"
+        "logo": "https://jordanpieton.fr/img/favicon/favicon.ico"
       }
     </script>
     <title>Jordan Pieton | Développeur Web</title>
@@ -71,151 +91,175 @@
         <section class="headerMain">
           <p>Hello World! Je suis</p>
           <h2 class="headerTitle split">Jordan Pieton</h2>
-          <h1 class="headerSubtitle">Développeur web junior</h1>
+          <h1 class="headerSubtitle">Développeur web fullstack</h1>
           <nav>
             <ul class="globalNav">
               <li>
-                <a href="#projectSection" class="link btnReverse"
+                <a
+                  href="#bioSection"
+                  class="link btnReverse"
+                  aria-label="A propos de moi"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skillsSection"
+                  class="link btnReverse"
+                  aria-label="Mes compétences"
+                  >Mes compétences</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projectSection"
+                  class="link btnReverse"
+                  aria-label="Découvrir mes projets"
                   >Découvrir mes projets</a
                 >
               </li>
               <li>
-                <a href="#contactSection" class="link btn">Me contacter</a>
+                <a
+                  href="#contactSection"
+                  class="link btn"
+                  aria-label="Me contacter"
+                  >Me contacter</a
+                >
               </li>
             </ul>
           </nav>
         </section>
-        <section class="headerSecond">
-          <p>
-            Passionné de technologie et âgé de 33 ans,
-            <span class="bold"
-              >je suis en pleine transition professionnelle vers le
-              développement web</span
-            >, avec un attrait particulier pour le front-end.
-          </p>
-          <p>
-            Mon parcours m'a conduit à explorer plusieurs horizons, mais c'est
-            dans l'univers du code que je trouve mon véritable épanouissement.
-            <span class="bold">Autodidacte</span>, j'ai consacré ces derniers
-            mois à approfondir mes connaissances en HTML, CSS et JavaScript, en
-            développant divers projets personnels que vous pourrez découvrir
-            ici. Chacun d'eux illustre mon apprentissage progressif et mon
-            engagement à maîtriser les compétences essentielles du métier.
-          </p>
-          <p>
-            Pour aller plus loin, j'intègre en mars 2025 la formation
-            <span class="bold"
-              >Développeur Web Full-stack JavaScript de la Wild Code
-              School</span
-            >
-            . Dans ce cadre, je suis à la recherche d'un stage en entreprise du
-            4 août au 15 septembre 2025, afin de mettre en pratique mes
-            compétences et contribuer activement à des projets concrets.
-          </p>
-          <p>
-            Curieux, rigoureux et toujours prêt à relever de nouveaux défis, je
-            serais ravi d'échanger avec vous sur toute opportunité de
-            collaboration.
-            <span class="bold">N'hésitez pas à me contacter !</span>
-          </p>
-        </section>
       </header>
       <main>
+        <section class="bioSection section" id="bioSection">
+          <h2 class="subtitle">Une reconversion guidée par la passion</h2>
+          <article class="bio">
+            <p>
+              Passionné de technologie et âgé de 33 ans, je suis actuellement en
+              transition professionnelle vers le développement web, un domaine
+              dans lequel je m’épanouis pleinement. Après avoir exploré
+              différents horizons, c’est dans l’univers du code que j’ai trouvé
+              ma voie.
+            </p>
+            <p>
+              Autodidacte dans un premier temps, j’ai consacré ces derniers mois
+              à renforcer mes compétences en HTML, CSS et JavaScript, à travers
+              des projets personnels que vous pouvez découvrir ici. Chacun d’eux
+              illustre ma progression, ma curiosité, et mon envie constante
+              d’apprendre et de créer.
+            </p>
+            <p>
+              En mars 2025, j’ai intégré la formation Développeur Web Full-Stack
+              JavaScript à la Wild Code School, dans l’objectif d’obtenir le
+              titre professionnel <span class="bold">DWWM</span>. Cette
+              formation m’a permis de structurer mon apprentissage, d’adopter
+              les bonnes pratiques du métier, et de travailler en méthode agile
+              Scrum sur des projets en équipe.
+            </p>
+            <p>
+              Aujourd’hui, je développe des applications web en
+              <span class="bold">React avec TypeScript</span> côté front-end, et
+              en <span class="bold">Node.js avec Express</span> pour le
+              back-end, en utilisant <span class="bold">MySQL</span> pour la
+              gestion des bases de données. Je m’initie également à Next.js afin
+              d’aller plus loin dans la performance, le SEO et le rendu côté
+              serveur.
+            </p>
+            <p>Je suis actuellement à la recherche :</p>
+            <ul>
+              <li>
+                - d’un <span class="bold">stage</span> en entreprise du
+                <span class="bold">4 août au 15 septembre 2025</span>, pour
+                mettre en pratique mes compétences dans un environnement
+                professionnel.
+              </li>
+              <li>
+                - d’une <span class="bold">alternance</span> à partir d’<span
+                  class="bold"
+                  >octobre 2025</span
+                >, dans le cadre d’une nouvelle formation menant au titre
+                professionnel de
+                <span class="bold"
+                  >Concepteur Développeur d’Applications (CDA)</span
+                >, pour poursuivre mon évolution vers des projets plus
+                complexes.
+              </li>
+            </ul>
+            <p>
+              Curieux, rigoureux et toujours motivé par de nouveaux défis, je
+              serais ravi d’échanger avec vous autour de vos projets ou d’une
+              opportunité de collaboration.
+            </p>
+            <p class="bold">N’hésitez pas à me contacter !</p>
+          </article>
+        </section>
+        <section class="skillsSection section" id="skillsSection">
+          <h2 class="subtitle">Mes compétences</h2>
+          <ul class="skillsContainer">
+            <li class="skillCard">
+              <h3>Développement Front-end</h3>
+              <ul class="skillsList">
+                <li><img src="./img/html.png" alt="HTML" /> : HTML</li>
+                <li><img src="./img/css.png" alt="CSS" /> : CSS</li>
+                <li>
+                  <img src="./img/javascript.png" alt="JavaScript" /> :
+                  JavaScript
+                </li>
+                <li>
+                  <img src="./img/typescript.png" alt="TypeScript" /> :
+                  TypeScript
+                </li>
+                <li><img src="./img/react.png" alt="ReactJS" /> : ReactJS</li>
+              </ul>
+            </li>
+            <li class="skillCard">
+              <h3>Développement Back-end</h3>
+              <ul class="skillsList">
+                <li><img src="./img/nodejs.png" alt="NodeJS" /> : NodeJS</li>
+                <li><img src="./img/express.png" alt="ExpressJS" /> : ExpressJS</li>
+              </ul>
+            </li>
+            </li>
+            <li class="skillCard">
+              <h3>Gestion de bases de données</h3>
+              <ul class="skillsList">
+                <li><img src="./img/sql.png" alt="SQL" /> : SQL</li>
+                <li><img src="./img/mysql.png" alt="MySQL" /> : MySQL</li>
+              </ul>
+            </li>
+            <li class="skillCard">
+              <h3>Autres compétences</h3>
+              <ul class="skillsList">
+                <li><img src="./img/figma.png" alt="Figma" /> : Figma</li>
+                <li><img src="./img/git.png" alt="Git" /> : Git</li>
+                <li><img src="./img/github.png" alt="Github" /> : Github</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
         <section class="projectSection section" id="projectSection">
           <h2 class="subtitle">Mes projets</h2>
           <ul class="projectContainer">
             <li>
               <article class="projectCard">
-                <h3 class="projectTitle">Blink-182-fr</h3>
+                <h3 class="projectTitle">Wild Eats</h3>
                 <img
-                  src="img/blink.webp"
+                  src="img/wildeats.webp"
                   alt="illustration projet"
                   class="projectImg"
                 />
                 <p class="projectDescription">
-                  "Blink-182-fr" est un site réalisé sur un groupe de musique.
-                  Il s'agit du premier projet que j'ai développé dans le cadre
-                  de mon apprentissage du HTML et du CSS. J'ai utilisé Tailwind
-                  pour me faciliter la mise en page et le responsive. Il
-                  comporte un peu de JavaScript pour l'interactivité du menu
-                  "hamburger" sur les petits écrans.
+                  Il s'agit du premier projet d'équipe réalisé durant la
+                  formation à la Wild Code School. Le projet liste les
+                  restaurants aux abords du campus. Je me suis occupé de la
+                  gestion des données (restaurants et articles de blog), de
+                  l'injection dynamique dans le DOM, du filtrage des restaurants
+                  grâce à des boutons, du formulaire d'ajout de restaurant et
+                  des likes et commentaires sur les articles de blog, ainsi que
+                  de la gestion des pull requests et des conflits sur GitHub.
                 </p>
                 <a
-                  href="https://blink-182-fr.web.app/"
-                  target="_blank"
-                  class="projectLink btnReverse"
-                  >Voir le projet</a
-                >
-              </article>
-            </li>
-            <li>
-              <article class="projectCard">
-                <h3 class="projectTitle">Lens Quiz</h3>
-                <img
-                  src="img/lens.webp"
-                  alt="illustration projet"
-                  class="projectImg"
-                />
-                <p class="projectDescription">
-                  Dans le cadre de l'apprentissage du JavaScript, j'ai souhaité
-                  réaliser un jeu sous forme de quiz afin de pouvoir travailler
-                  sur de nombreux aspects du langage. Ce quiz est basé sur
-                  l'histoire d'un club de football. Le quiz propose 10 questions
-                  dans un ordre aléatoire avec 4 propositions de réponses
-                  chacune, puis un tableau qui récapitule les scores.
-                </p>
-                <a
-                  href="https://rclensquiz.web.app/"
-                  target="_blank"
-                  class="projectLink btnReverse"
-                  >Voir le projet</a
-                >
-              </article>
-            </li>
-            <li>
-              <article class="projectCard">
-                <h3 class="projectTitle">Direct Meteo</h3>
-                <img
-                  src="img/meteo.webp"
-                  alt="illustration projet"
-                  class="projectImg"
-                />
-                <p class="projectDescription">
-                  Lorsque j'ai découvert le concept d'API, j'ai souhaité
-                  développer une application web météo afin de pratiquer les
-                  appels API et l'intégration des résultats obtenus dans le
-                  HTML. L'application demande l'accord à l'utilisateur pour
-                  accéder à sa géolocalisation, mais l'utilisateur peut
-                  également rechercher la ville de son choix pour en obtenir la
-                  météo en temps réel.
-                </p>
-                <a
-                  href="https://direct-meteo.web.app/"
-                  target="_blank"
-                  class="projectLink btnReverse"
-                  >Voir le projet</a
-                >
-              </article>
-            </li>
-            <li>
-              <article class="projectCard">
-                <h3 class="projectTitle">Mars Pictures</h3>
-                <img
-                  src="img/mars.webp"
-                  alt="illustration projet"
-                  class="projectImg"
-                />
-                <p class="projectDescription">
-                  Pour poursuivre la découverte des API, j'ai souhaité
-                  m'entraîner sur celle de la NASA. J'ai donc conçu un site qui
-                  permet à l'utilisateur d'accéder aux photographies réalisées
-                  sur Mars par le robot Curiosity. La recherche de photos
-                  s'effectue par date, il suffit de sélectionner une date pour
-                  que le site affiche l'ensemble des photos transmises par le
-                  robot à la date choisie.
-                </p>
-                <a
-                  href="https://mars-pictures.web.app/"
+                  href="https://jordan-182.github.io/lille-js-wild-eat-1/"
                   target="_blank"
                   class="projectLink btnReverse"
                   >Voir le projet</a
@@ -233,14 +277,65 @@
                 <p class="projectDescription">
                   J'ai eu le plaisir de créer le site vitrine d'une amie qui
                   lance son activité de sophrologie. Ce site a pour but de la
-                  faire connaitre à de nouveaux client et comporte une page pour
-                  présenter son parcours, puis une page présentant chacune des
-                  prestations qu'elle propose. Le site propose également un
+                  faire connaître à de nouveaux clients et comporte une page
+                  pour présenter son parcours, puis une page présentant chacune
+                  des prestations qu'elle propose. Le site propose également un
                   formulaire de contact pour la contacter directement par mail
                   et des liens vers la page de prise de rendez-vous sur Résalib.
                 </p>
                 <a
                   href="https://aphtonminne.fr/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Mars Pictures</h3>
+                <img
+                  src="img/mars.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  Suite à ma découverte des API, j'ai souhaité m'entraîner sur
+                  celle de la NASA. J'ai donc conçu un site qui permet à
+                  l'utilisateur d'accéder aux photographies réalisées sur Mars
+                  par le robot Curiosity. La recherche de photos s'effectue par
+                  date, il suffit de sélectionner une date pour que le site
+                  affiche l'ensemble des photos transmises par le robot à la
+                  date choisie.
+                </p>
+                <a
+                  href="https://mars-pictures.web.app/"
+                  target="_blank"
+                  class="projectLink btnReverse"
+                  >Voir le projet</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="projectCard">
+                <h3 class="projectTitle">Blink-182-fr</h3>
+                <img
+                  src="img/blink.webp"
+                  alt="illustration projet"
+                  class="projectImg"
+                />
+                <p class="projectDescription">
+                  "Blink-182-fr" est un site réalisé sur un groupe de musique.
+                  Il s'agit du premier projet que j'ai développé et auquel j'ai
+                  ajouté des fonctionnalités au fur et à mesure de mon
+                  apprentissage. Le site propose de redécouvrir l'histoire du
+                  groupe et de chacun de ses membres, la discographie détaillée
+                  du groupe et les paroles de chaque chanson. J'ai également
+                  ajouté un jeu sous forme de quiz ayant pour but retrouver le
+                  nom d'une chanson d'après des paroles.
+                </p>
+                <a
+                  href="https://blink182.jordanpieton.fr/"
                   target="_blank"
                   class="projectLink btnReverse"
                   >Voir le projet</a
@@ -261,20 +356,26 @@
               </p>
               <ul class="contactLinks">
                 <li>
-                  <a href="#" class="contactBtn"
+                  <a
+                    href="https://github.com/Jordan-182"
+                    target="_blank"
+                    class="contactBtn"
                     ><i class="fa-brands fa-github"></i> Retrouvez moi sur
                     Github</a
                   >
                 </li>
                 <li>
-                  <a href="https://google.fr" class="contactBtn"
+                  <a
+                    href="https://www.linkedin.com/in/jordan-pieton-005946121/"
+                    target="_blank"
+                    class="contactBtn"
                     ><i class="fa-brands fa-linkedin"></i> Connectons nous sur
                     LinkedIn</a
                   >
                 </li>
               </ul>
             </div>
-            <form action="post" class="contactForm">
+            <form action="post" class="contactForm" id="contactForm">
               <p>
                 <label for="name">Votre nom</label>
                 <input
@@ -313,5 +414,6 @@
         <p>&#169; Copyright 2025 - Jordan Pieton</p>
       </footer>
     </section>
+    <script src="form.js"></script>
   </body>
 </html>
